@@ -6,14 +6,14 @@ Best Contribution to Operational Tools, Availability, and Manageability
 
 ## Describe your Submission
 
-DataMung is a self-serviced tool that runs mysqldump against RDS MySQL database
-instance from a copy of EC2 instance, and stores result to S3. It also go
-backwards and restore an RDS instance from S3 object. The steps in backup or
-restore process is driven by Simple Workflow. User interacts the tool via a
-web UI, which calls a RESTful service that allows other systems to integrate
-with the tool.
+DataMung is a self-serviced, web-based tool that backs up RDS MySQL instance
+ into S3. It does so my running predefined workflows with
+SWF and create replication, launch EC2 instance, run MySQL command and upload
+result to S3. As a result Datamung allows user to replicate MySQL RDS instance
+across region, VPC, account, or AWS network.
 
-This tool allows user to replicate MySQL instance across regions or accounts.
+More details about Datamung is available at http://wiki.cyclopsgroup.org/datamung
+A demo website is running at http://datamung-demo.cyclopsgroup.org
 
 ## Provide Links to Github Repo's for your Submission
 
